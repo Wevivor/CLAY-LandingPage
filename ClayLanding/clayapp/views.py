@@ -4,18 +4,21 @@ from .models import Email
 
 
 def index(request):
-
+    if request.GET:
+        user = Email()
+        user.email = request.GET['user']
+        if request.GET['user'] == " ":
+            user.email = "no email"
+        user.save()
+        return redirect("index")
+    # if request.POST:
+    #     # user=
+    #     email = request.POST['user']  # input name= "user"
+    #     # email.save()
+    #     return redirect('index')
+    # # context = {'email': email}
     return render(request, 'index.html')
 
 
 def complete(request):
-    # Email.get_object_or_404()
-    # email = Email.objects.all()
-    if request.POST:
-        email = request.POST['email']
-        # email.save()
-        return redirect('complete')
-
-    context = {'email': email}
-
-    return render(request, 'complete.html', context)
+    return render(request, 'complete.html')
