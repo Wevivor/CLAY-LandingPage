@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <script src="{% static 'index.js' %}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CLAY :by WEVIVOR</title>
+</head>
+
+<body>
+    <form action="{url 'complete'}" method='POST' class="form1">
+        {% csrf_token %}
+        <div class="title">CLAY</div>
+        <img class="img1" src="{% static 'images/moaaa.png' %}">
+        <img class="txt1" src="{% static 'images/moaa.png' %}">
+        <br><br><br>
+        <img class="img1" src="{% static 'images/txt2.png' %}">
+        <img class="txt2" src="{% static 'images/moa2.png' %}">
+        <br><br><br>
+        <div class="d"></div>
+        <div>
+            <label for="email" class="labelEmail">
+                <span class="contentEmail">CLAY가 기다려진다면 이메일을 입력해주세요!</span>
+            </label>
+        </div>
+        <div class="email_field">
+            <input type="text" id='email' name='user' autocomplete="off" placeholder="email 입력" required>
+        </div>
+        <div>
+            <input type="submit" class="submit" value="제출하기">
+        </div>
+        <!-- 
+
+        <div class="form-wrapper">
+
+            <form action="" class="form">
+                <div class="form-group">
+                    <label class="form-label" for="first">What is your name?</label>
+                    <input id="first" class="form-input" type="text" />
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="last">What is your quest?</label>
+                    <input id="last" class="form-input" type="text" />
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="color">What is your favorite color?</label>
+                    <input id="color" class="form-input" type="text" />
+                </div>
+            </form>
+        </div> -->
+    </form>
+</body>
+
+</html>

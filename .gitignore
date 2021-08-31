@@ -1,0 +1,8 @@
+secrets.json
+__pycache__
+media/
+myvenv/
+migrations
+db.sqlite3
+django.log
+uwsgi.ini
