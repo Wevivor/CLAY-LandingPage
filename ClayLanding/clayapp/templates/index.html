@@ -2,107 +2,189 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
-    <script src="{% static 'index.js' %}"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <script src="{% static 'index.js' %}"></script> -->
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500&display=swap" rel="stylesheet">
+
+    <!-- <meta content="" name="description">
+        <meta content="" name="keywords"> -->
+
+    <!-- Favicons -->
+    <!-- <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'aos/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <!-- <link href="assets/css/style.css" rel="stylesheet"> -->
+
     <title>CLAY :by WEVIVOR</title>
 </head>
 
 <body>
-    <form action="" method='GET' class="form1">
-        {% csrf_token %}
-        <div class="box1">
-            <img class="img1_1" src="{% static 'images/img_onboarding.png' %}">
-            <div class="div_text1_1">
-                <span class="text1_1">
-                    한 곳에
-                    모으고,<br>
-                    한 눈에
-                    파악하기.</span>
-            </div>
-        </div>
-        <div class="box2">
-            <div class="div_container">
-                <div class="div_text2_1">
-                    <span class="text2_1">
-                        카카오톡 '나에게 보내기'했던<br>
-                        수많은 링크들,<br>
-                        다시 찾아보셨나요?<br>🔗🔗🔗🔗🔗🔗🔗🔗🔗<br>
-                    </span>
-                </div>
-            </div>
-            <br><br>
-            <video class="img2_1" autoplay controls loop muted poster="{% static 'images/moaa.png' %}" preload="auto">
-                <source class="video" src="{% static 'images/img_screen.mov' %}" type="video/mp4">
-                video error
-            </video>
-        </div>
-        <span class="text2_1">
-            이제 극뽁~~~ 이런,,, 멘트 하나<br>
+    <!-- <main id="main"> -->
+    <!--  -->
 
-        </span>
+    <body>
+        <form action="" method='GET' class="form1">
+            {% csrf_token %}
+            <div class="box1">
+                <img class="img1_1" src="{% static 'images/img_onboarding.png' %}">
+                <div class="div_text1_1">
+                    <span class="text1_1">
+                        한 곳에
+                        모으고,<br>
+                        한 눈에
+                        파악하기.</span>
+                </div>
+                <section id="hero">
+                    <div class="hero-container">
+                        <a href="#email111" class="btn-get-started scrollto">CLAY
+                            알아보기</a>
+                    </div>
+                </section>
 
-        <div class="d3"></div>
-        <div class="box3">
-            <div class="dimg3">
-                <img class="img3" src="{% static 'images/moa11.png' %}">
             </div>
-            <div class="txt3">
-                <div class="t1">
-                    💡 간편하게! 모든 콘텐츠를 CLAY 하나에 모아 보세요.<br>
+            <section id="about1" class="about1">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title" data-aos="fade-up">
+                            <h2>카카오톡 '나에게 보내기'했던<br>
+                                수많은 링크들,<br>
+                                다시 찾아보셨나요?</h2>
+                        </div>
+                        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+                            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                                <div class="portfolio-wrap">
+                                    <img class="img-fluid" alt="" src="{% static 'images/img_screen.png' %}"
+                                        id="img2_1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                계속 담게되는 쇼핑 정보, 다시 봐야 하는 각종 정보들..<br>
-                계속 추가되는 맛집 리스트, 다시 보고 싶은 영상들...<br>
-                <div class="t2">
-                    당신이 스마트폰에서 보는<br>모든 콘텐츠를 클레이에서 모을 수 있어요.
-                </div>
-            </div>
-        </div>
-        <br><br>
-        <div class="d"></div>
-        <div class="box4">
-            <div class="txt4">
-                <div class="t1">
-                    ⚡ 수집한 콘텐츠를 빠르게 다시 찾아보세요!
-                </div>
-                언제 어디에서 본지 몰라서,<br>
-                어떤 내용인지 정확히 기억나지 않아서,<br>
-                다시 찾아보지 못했던 콘텐츠들!<br>
-                <div class="t2">
-                    자동 분류와 키워드 검색으로<br>
-                    CLAY에서 더 빨리 더 쉽게 찾아볼 수 있어요.
-                </div>
-            </div>
-            <div>
-                <img class="img4" src="{% static 'images/classify.png' %}">
-            </div>
-        </div>
 
 
-        <br><br><br>
-        <div class="d2"></div>
-        <div class="form-wrapper">
-            <div>
-                <label for="email" class="labelEmail">
-                    <span class="contentEmail">누구보다 먼저, &nbsp;CLAY를 경험하세요!</span>
-                </label>
-            </div>
-            <div class="email_field">
-                <input type="text" id='email' name='user' autocomplete="off" placeholder="  email 입력" required>
-            </div>
-            <div>
-                <input type="submit" class="submit" value="제출하기">
-            </div>
-        </div>
-        <div class="d1"></div>
-    </form>
-</body>
+                <!-- ======= About Us Section ======= -->
+                <section id="about" class="about">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6" data-aos="fade-right">
+                                <img src="{% static 'images/classify1.png.png' %}" class="img-fluid" alt="">
+
+                            </div>
+                            <div class="col-lg-6" data-aos="fade-left">
+                                <div id="about_content" class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
+                                    <h3>간편하게 모든 콘텐츠를 CLAY에 모아 보세요!</h3>
+                                    <br>
+                                    <p class="fst-italic">
+                                        계속 담게되는 쇼핑 정보, 다시 봐야 하는 각종 정보들..<br>
+                                        계속 추가되는 맛집 리스트, 다시 보고 싶은 영상들...<br>
+                                    </p>
+                                    <p>당신이 스마트폰에서 보는<br>모든 콘텐츠를 클레이에서 모을 수 있어요.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <!-- End About Us Section -->
+
+                <!-- ======= Services Section ======= -->
+                <section id="services" class="services">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+                                <div class="image">
+                                    <img src="{% static 'images/moa123.png' %}" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6  order-2 order-lg-1" data-aos="fade-right">
+                                <div id="about_content" class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
+                                    <h3>수집한 콘텐츠를 빠르게 다시 찾아보세요!</h3>
+                                    <br>
+                                    <p class="fst-italic">
+                                        언제 어디에서 본지 몰라서,<br>
+                                        어떤 내용인지 정확히 기억나지 않아서,<br>
+                                        다시 찾아보지 못했던 콘텐츠들!<br>
+                                    </p>
+                                    <p>자동 분류와 키워드 검색으로<br>
+                                        CLAY에서 더 빨리 더 쉽게 찾아볼 수 있어요.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- End Services Section -->
+
+
+
+                <div class="d1"></div>
+                <div class="form-wrapper" id='email111'>
+                    <div>
+                        <label for="email" class="labelEmail">
+                            <span class="contentEmail">누구보다 먼저, &nbsp;CLAY를 경험하세요!</span>
+                        </label>
+                    </div>
+                    <div class="email_field">
+                        <input type="text" id='email' name='user' autocomplete="off" placeholder="  email 입력" required>
+                    </div>
+                    <div>
+                        <input type="submit" class="submit" value="제출하기">
+                    </div>
+                </div>
+                <div class="d1"></div>
+
+                <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+                        class="bi bi-arrow-up-short"></i></a>
+                <!-- footer -->
+                <footer id="footer">
+                    <div class="container footer-bottom clearfix">
+                        <!-- <div class="footer-top">
+                            <h3>C L A Y</h3>
+                            <p>당신의 콘텐츠가 당신을 표현하는 세상</p>
+                        </div> -->
+
+                        &copy; <strong><span>WEVIVOR</span></strong>. All Rights Reserved
+                    </div>
+                </footer><!-- End Footer -->
+
+        </form>
+
+
+
+        <!-- Vendor JS Files -->
+        <script src="{% static 'aos/aos.js' %}"></script>
+        <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'glightbox/js/glightbox.min.js' %}"></script>
+        <script src="{% static 'isotope-layout/isotope.pkgd.min.js' %}"></script>
+        <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+        <script src="{% static 'swiper/swiper-bundle.min.js' %}"></script>
+
+        <!-- Template Main JS File -->
+        <script src="{% static 'main.js' %}"></script>
+
+    </body>
 
 </html>

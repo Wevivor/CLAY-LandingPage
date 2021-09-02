@@ -11,12 +11,6 @@ def index(request):
             user.email = "no email"
         user.save()
         return redirect("index")
-    # if request.POST:
-    #     # user=
-    #     email = request.POST['user']  # input name= "user"
-    #     # email.save()
-    #     return redirect('index')
-    # # context = {'email': email}
     return render(request, 'index.html')
 
 
