@@ -152,7 +152,7 @@ video::-webkit-media-controls {
 	color: #ffffff;
 	font-size: 3rem;
 	text-align: left;
-	line-height: 170%;
+	line-height: 150%;
  }
 
  .img1_1{
@@ -376,15 +376,20 @@ video::-webkit-media-controls {
 	text-align: center;
 	padding-bottom: 40px;
   }
+<<<<<<< HEAD
 
   .section-title h2 {
+=======
+  
+  .section-title h2{
+>>>>>>> e6c78a185d62db992f0b80944de97073cd100fd7
 	font-size: 32px;
 	font-weight: bold;
 	text-transform: uppercase;
 	margin-bottom: 15px;
 	padding-bottom: 0;
 	color: #151515;
-	line-height: 50px;
+	line-height: 40px;
   }
 
   .section-title p {
@@ -586,6 +591,7 @@ video::-webkit-media-controls {
 	font-size: 13px;
 	padding-top: 5px;
   }
+<<<<<<< HEAD
 
 
 
@@ -629,46 +635,97 @@ video::-webkit-media-controls {
 	.about1 h2{
 		font-size: 24px!important;
 	}
+=======
+  
+  .foot{
+	  background-color: white ;
+	  color: #222222;
+	  /* padding: 10% 10%; */
+  }
+
+
+  /* 표지 미디어쿼리 */
+@media (max-width: 3000px) {
+    #img2_1{
+       margin-left: 15%;
+       max-width: 1200px!important;
+     }
+  }
+@media (max-width: 1120px) {
+   .img1_1{
+      width: 50%;
+    }
+    #img2_1{
+       margin-left: 0%!important;
+     }
+  }
+@media (max-width: 1024px) {
+   .img1_1{
+      width: 50%;
+      top: 20%;
+    }
+    #hero .hero-container {
+      bottom: 32%;
+     }
+     #img2_1{
+      margin-left: 12%;
+    }
+  }
+
+@media (max-width: 850px) {
+   .img1_1{
+      position: absolute;
+      width: 50%;
+      top: 30%;
+    }
+    #hero .hero-container {
+      bottom: 33%;
+     }
+   .about1 h2{
+      font-size: 24px!important;
+   }
+>>>>>>> e6c78a185d62db992f0b80944de97073cd100fd7
 
 }
 
 @media (max-width: 640px) {
-	.img1_1{
-	   position: absolute;
-	   width: 80%;
-	   top: 45%;
-	   left: 10%;
-	 }
-	 .box1{
-	   height: 110vh;
-	   background-color: #000000;
-	 }
-	 .div_text1_1{
-	   display: flex;
-	   flex-direction: column;
-	   align-content: center;
-	   justify-content: center;
-	   top: 10%;
-	   left: 10%;
-	   position: absolute;
-	 }
-	 .text1_1 {
-	   font-size: 2.5rem;
-	 }
-	 #hero .hero-container {
-	   bottom: 55%;
-	  }
-	  .contentEmail{
-	   font-size: 1.5rem!important;
-	}
-	::placeholder {
-	   font-size: 1rem;
-	  }
-	  #email{
-	   width: 100%!important;
-	}
+   .img1_1{
+      position: absolute;
+      width: 80%;
+      top: 45%;
+      left: 10%;
+    }
+    .box1{
+      height: 110vh;
+      background-color: #000000;
+    }
+    .div_text1_1{
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      top: 10%;
+      left: 10%;
+      position: absolute;
+    }
+    .text1_1 {
+      font-size: 2.5rem;
+    }
+    #hero .hero-container {
+      bottom: 55%;
+     }
+     .contentEmail{
+      font-size: 1.5rem!important;
+   }
+   ::placeholder {
+      font-size: 1rem;
+     }
+     #email{
+      width: 100%!important;
+   }
  }
 @media (max-width: 415px) {
+<<<<<<< HEAD
 	.img1_1{
 	   position: absolute;
 	   width: 85%;
@@ -695,4 +752,32 @@ video::-webkit-media-controls {
 	#email{
 	   width: 80%!important;
 	}
+=======
+   .img1_1{
+      position: absolute;
+      width: 85%;
+      top: 48%;
+      left: 10%;
+    }
+    .text1_1 {
+      font-size: 2rem;
+    }
+    .div_text1_1{
+      top: 15%;
+      left: 10%;
+
+    }
+    .contentEmail{
+      font-size: 0.95rem!important;
+   }
+   ::placeholder {
+      font-size: 0.8rem;
+     }
+     .submit{
+      font-size: 0.8rem;
+   }
+   #email{
+      width: 80%!important;
+   }
+>>>>>>> e6c78a185d62db992f0b80944de97073cd100fd7
   }
