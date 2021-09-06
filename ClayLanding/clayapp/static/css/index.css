@@ -436,18 +436,14 @@ video::-webkit-media-controls {
   .txt_bold{
 	  font-weight: bold;
   }
- /* #img2_1{
-	text-align: center;
-	display: block;
-	align-content: center;
-	justify-content: center;
+ #img2_1{
 	margin-left: 30%;
 	position: absolute;
 	min-width: 250px;
 	max-width: 1000px;
 	height: auto;
 
- } */
+ }
 
 
   /* about1 > row portfolio-container{
@@ -586,7 +582,7 @@ video::-webkit-media-controls {
 	font-size: 13px;
 	padding-top: 5px;
   }
-  
+
   .foot{
 	  background-color: white ;
 	  color: #222222;
