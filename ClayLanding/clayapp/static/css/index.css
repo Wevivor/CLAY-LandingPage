@@ -137,7 +137,7 @@ video::-webkit-media-controls {
 	background-color: #000000;
 	position: relative;
  }
- 
+
  .div_text1_1{
 	display: flex;
 	flex-direction: column;
@@ -147,14 +147,14 @@ video::-webkit-media-controls {
 	left: 10%;
 	position: absolute;
  }
- 
+
  .text1_1 {
 	color: #ffffff;
 	font-size: 3rem;
 	text-align: left;
 	line-height: 170%;
  }
- 
+
  .img1_1{
 	display: flex;
 	flex-direction: column;
@@ -166,13 +166,13 @@ video::-webkit-media-controls {
 	width: 86.5vh;
 	z-index: 100;
  }
- 
+
  .box2{
 	width: 100%;
 	height: 90vh;
 	background-color: white;
 	position: relative;
- 
+
  }
 
 
@@ -205,12 +205,12 @@ video::-webkit-media-controls {
 	text-decoration: none;
 	color: #7cc576;
   }
-  
+
   a:hover {
 	color: #9ed49a;
 	text-decoration: none;
   }
- 
+
   /*--------------------------------------------------------------
   # Back to top button
   --------------------------------------------------------------*/
@@ -227,23 +227,23 @@ video::-webkit-media-controls {
 	border-radius: 4px;
 	transition: all 0.4s;
   }
-  
+
   .back-to-top i {
 	font-size: 28px;
 	color: #fff;
 	line-height: 0;
   }
-  
+
   .back-to-top:hover {
 	background: #ffe572;
 	color: #fff;
   }
-  
+
   .back-to-top.active {
 	visibility: visible;
 	opacity: 1;
   }
-  
+
   /*--------------------------------------------------------------
   # Disable AOS delay on mobile
   --------------------------------------------------------------*/
@@ -252,7 +252,7 @@ video::-webkit-media-controls {
 	  transition-delay: 0 !important;
 	}
   }
-  
+
   /*--------------------------------------------------------------
   # Header
   --------------------------------------------------------------*/
@@ -264,7 +264,7 @@ video::-webkit-media-controls {
 	background: #fff;
 	box-shadow: 0 4px 10px -3px rgba(191, 191, 191, 0.5);
   }
-  
+
   #header .logo h1 {
 	font-size: 28px;
 	margin: 0;
@@ -273,34 +273,34 @@ video::-webkit-media-controls {
 	letter-spacing: 3px;
 	text-transform: uppercase;
   }
-  
+
   #header .logo h1 a, #header .logo h1 a:hover {
 	color: #fff;
 	text-decoration: none;
   }
-  
+
   #header .logo img {
 	padding: 0;
 	margin: 0;
 	max-height: 40px;
   }
-  
+
   @media (max-width: 992px) {
 	#header {
 	  height: 70px;
 	}
   }
-  
+
   .scrolled-offset {
 	margin-top: 90px;
   }
-  
+
   @media (max-width: 992px) {
 	.scrolled-offset {
 	  margin-top: 90px;
 	}
   }
-  
+
   /*--------------------------------------------------------------
   # Hero Section
   --------------------------------------------------------------*/
@@ -309,7 +309,7 @@ video::-webkit-media-controls {
 	height: 100vh;
 	position: relative;
   }
-  
+
   #hero .hero-container {
 	position: absolute;
 	bottom: 33%;
@@ -321,7 +321,7 @@ video::-webkit-media-controls {
 	text-align: center;
 	padding: 0 15px;
   }
-  
+
   #hero .btn-get-started {
 	/* font-family: "Montserrat", sans-serif; */
 	text-decoration: none;
@@ -337,19 +337,19 @@ video::-webkit-media-controls {
 	background: #fcfcfc;
 	border: 2.5px solid #ffce2c63;;
   }
-  
+
   #hero .btn-get-started:hover {
 	transition: 0.5s;
 	background: #ffce2c;
 	color: #ffffff;
   }
-  
+
   @media (min-width: 1024px) {
 	#hero {
 	  background-attachment: fixed;
 	}
   }
-  
+
   @media (max-width: 768px) {
 	#hero h1 {
 	  font-size: 28px;
@@ -359,7 +359,7 @@ video::-webkit-media-controls {
 	  line-height: 22px;
 	}
   }
-  
+
   /*--------------------------------------------------------------
   # Sections General
   --------------------------------------------------------------*/
@@ -367,16 +367,16 @@ video::-webkit-media-controls {
 	padding: 60px 0;
 	overflow: hidden;
   }
-  
+
   .section-bg {
 	background-color: whitesmoke;
   }
-  
+
   .section-title {
 	text-align: center;
 	padding-bottom: 40px;
   }
-  
+
   .section-title h2 {
 	font-size: 32px;
 	font-weight: bold;
@@ -386,7 +386,7 @@ video::-webkit-media-controls {
 	color: #151515;
 	line-height: 50px;
   }
-  
+
   .section-title p {
 	margin-bottom: 0;
 	color: #aeaeae;
@@ -402,7 +402,7 @@ video::-webkit-media-controls {
 }
 .a{
 	color: #1673ff;
-} 
+}
 .y{
 	color: #1a9c2b;
 }
@@ -415,12 +415,12 @@ video::-webkit-media-controls {
 .about1{
 	height:auto;
   }
-  
+
   .about .image {
 	/* padding: 20px; */
 	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   }
-  
+
   .about .content{
 	margin-top:30%;
 	text-align: start;
@@ -429,22 +429,13 @@ video::-webkit-media-controls {
 	font-weight: 600;
 	font-size: 26px;
   }
-  
+
   .about .content p:last-child {
 	margin-bottom: 0;
   }
   .txt_bold{
 	  font-weight: bold;
   }
-  #img2_1{
-	text-align: center;
-	min-width: 300px;
-	max-width: 800px;
-	width: 80vw;
-	left: 50%;
-	top: 50%;
-  }
-   
  /* #img2_1{
 	text-align: center;
 	display: block;
@@ -459,16 +450,11 @@ video::-webkit-media-controls {
  } */
 
 
-  about1 > row portfolio-container{
-	/* row portfolio-container{ */
-	/* display: flex; */
-	/* flex-direction: column; */
-	position:relative;
-	align-content: center;
-	justify-content: center;
-	text-align: center;
-	/* margin-left: 30%; */
-  }
+  /* about1 > row portfolio-container{
+	  position: absolute;
+	  left:10%;
+
+  } */
   /*--------------------------------------------------------------
   # Services
   --------------------------------------------------------------*/
@@ -477,31 +463,31 @@ video::-webkit-media-controls {
 	font-weight: 700;
 	margin: 5px 0 10px 60px;
   }
-  
+
   .services .icon-box i {
 	font-size: 48px;
 	float: left;
 	color: #7cc576;
   }
-  
+
   .services .icon-box p {
 	font-size: 15px;
 	color: #959595;
 	margin-left: 60px;
   }
-  
+
   .services .image {
 	/* background-position: center  center; */
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 400px;
   }
-  
+
   .services .content{
 	margin-top:20%;
 	text-align: start;
   }
-  
+
   .services .content h3 {
 	font-weight: 600;
 	font-size: 26px;
@@ -512,7 +498,7 @@ video::-webkit-media-controls {
 
 
 
-  
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -522,7 +508,7 @@ video::-webkit-media-controls {
 	font-size: 14px;
 	position: relative;
   }
-  
+
   #footer::before {
 	content: "";
 	position: absolute;
@@ -533,18 +519,18 @@ video::-webkit-media-controls {
 	background: rgba(0, 0, 0, 0.85);
 	z-index: 1;
   }
-  
+
   #footer .footer-top {
 	position: relative;
 	z-index: 2;
 	text-align: center;
 	padding: 80px 0;
   }
-  
+
   #footer .footer-top .footer-logo img {
 	height: 50px;
   }
-  
+
   #footer .footer-top h3 {
 	font-size: 36px;
 	font-weight: 700;
@@ -554,20 +540,20 @@ video::-webkit-media-controls {
 	padding: 10px 0 0 0;
 	margin-bottom: 0;
   }
-  
+
   #footer .footer-top p {
 	font-size: 15;
 	font-style: italic;
 	margin: 10px 0 0 0;
 	padding: 0;
   }
-  
+
   #footer .footer-top .footer-newsletter {
 	text-align: center;
 	font-size: 15px;
 	margin-top: 10px;
   }
-  
+
   #footer .footer-top .footer-newsletter form {
 	background: #fff;
 	padding: 6px 10px;
@@ -577,12 +563,12 @@ video::-webkit-media-controls {
 	text-align: left;
   }
 
-  
+
   #footer .footer-top .social-links {
 	margin-top: 20px;
   }
-  
-  
+
+
   #footer .footer-bottom {
 	border-top: 1px solid #222222;
 	z-index: 2;
@@ -590,25 +576,33 @@ video::-webkit-media-controls {
 	padding-top: 10px;
 	padding-bottom: 40px;
   }
-  
+
   #footer .copyright {
 	text-align: center;
   }
-  
+
   #footer .credits {
 	text-align: center;
 	font-size: 13px;
 	padding-top: 5px;
   }
-  
+
 
 
   /* 표지 미디어쿼리 */
+  @media (max-width: 3000px) {
+	 #img2_1{
+		 margin-left: 15%;
+		 max-width: 1200px!important;
+	  }
+  }
 @media (max-width: 1120px) {
 	.img1_1{
 	   width: 50%;
 	 }
- 
+	 #img2_1{
+		 margin-left: 0%!important;
+	  }
   }
 @media (max-width: 1024px) {
 	.img1_1{
@@ -618,8 +612,11 @@ video::-webkit-media-controls {
 	 #hero .hero-container {
 	   bottom: 32%;
 	  }
+	  #img2_1{
+		margin-left: 12%;
+	 }
   }
- 
+
 @media (max-width: 850px) {
 	.img1_1{
 	   position: absolute;
@@ -629,9 +626,12 @@ video::-webkit-media-controls {
 	 #hero .hero-container {
 	   bottom: 33%;
 	  }
- 
+	.about1 h2{
+		font-size: 24px!important;
+	}
+
 }
- 
+
 @media (max-width: 640px) {
 	.img1_1{
 	   position: absolute;
@@ -681,7 +681,7 @@ video::-webkit-media-controls {
 	 .div_text1_1{
 	   top: 15%;
 	   left: 10%;
- 
+
 	 }
 	 .contentEmail{
 	   font-size: 0.95rem!important;
