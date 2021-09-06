@@ -152,7 +152,7 @@ video::-webkit-media-controls {
 	color: #ffffff;
 	font-size: 3rem;
 	text-align: left;
-	line-height: 170%;
+	line-height: 150%;
  }
  
  .img1_1{
@@ -377,14 +377,14 @@ video::-webkit-media-controls {
 	padding-bottom: 40px;
   }
   
-  .section-title h2 {
+  .section-title h2{
 	font-size: 32px;
 	font-weight: bold;
 	text-transform: uppercase;
 	margin-bottom: 15px;
 	padding-bottom: 0;
 	color: #151515;
-	line-height: 50px;
+	line-height: 40px;
   }
   
   .section-title p {
