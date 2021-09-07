@@ -89,6 +89,10 @@ video::-webkit-media-controls {
 	font-size: 1.8rem;
 	font-weight: bold;
 }
+.subcontentEmail{
+	font-size: 0.9rem;
+	color:#505050;
+}
 .email_field{
 	margin: 3%;
 	background:transparent;
@@ -447,7 +451,6 @@ video::-webkit-media-controls {
 
  }
 
-
   /* about1 > row portfolio-container{
 	  position: absolute;
 	  left:10%;
@@ -591,6 +594,42 @@ video::-webkit-media-controls {
 	  /* padding: 10% 10%; */
   }
 
+  .modal_wrap{
+	display: none;
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	margin: -250px 0 0 -250px;
+	background:#eee;
+	z-index: 2;
+}
+.black_bg{
+	display: none;
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color:rgba(0, 0,0, 0.5);
+	top:0;
+	left: 0;
+	z-index: 1;
+}
+.modal_close{
+	width: 26px;
+	height: 26px;
+	position: absolute;
+	top: -30px;
+	right: 0;
+}
+.modal_close> a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+	text-indent: -9999px;
+}
 
   /* 표지 미디어쿼리 */
 @media (max-width: 3000px) {
@@ -632,7 +671,13 @@ video::-webkit-media-controls {
    .about1 h2{
       font-size: 24px!important;
    }
-}
+    #about_content{
+	   margin-bottom: 15%!important;
+    }
+	#service_content{
+	   margin-bottom: 15%!important;
+	}
+ }
 
 @media (max-width: 640px) {
    .img1_1{
@@ -669,6 +714,9 @@ video::-webkit-media-controls {
      #email{
       width: 100%!important;
    }
+   /* .about .content{
+
+   } */
  }
 @media (max-width: 415px) {
    .img1_1{
@@ -686,7 +734,10 @@ video::-webkit-media-controls {
 
     }
     .contentEmail{
-      font-size: 0.95rem!important;
+      font-size: 1rem!important;
+   }
+   .subcontentEmail{
+		font-size: 0.7rem!important;
    }
    ::placeholder {
       font-size: 0.8rem;
