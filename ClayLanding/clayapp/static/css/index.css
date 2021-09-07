@@ -121,16 +121,15 @@ video::-webkit-media-controls {
 .body{
 	font-family: 'Noto Sans KR', sans-serif;
 }
-
 .form-wrapper {
-	max-width: 80%;
+	max-width: 90%;
 	/* min-width: 300px; */
 	padding: 70px 30px 70px 30px;
-	margin: 50px auto;
+	margin: 25px 5%;
 	background-color: #ffffff;
 	border-radius: 5px;
 	box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
-  }
+}
 
 
 /* 소윤 파트 */
@@ -229,8 +228,8 @@ video::-webkit-media-controls {
 	margin-top: 10%;
 }
 .img23{
-	width: 95%;
-}
+	width: 100%;
+ } 
 
 /* 미디어쿼리!!! */
 
@@ -528,9 +527,9 @@ video::-webkit-media-controls {
   }
 
   .services .content{
-	margin-top:20%;
+	margin-top:10%;
 	text-align: center;
-  }
+   }
 
   .services .content h2 {
 	font-size: 32px;
@@ -774,85 +773,87 @@ video::-webkit-media-controls {
 	}
  }
 
-@media (max-width: 640px) {
-   .img1_1{
-      position: absolute;
-      width: 80%;
-      top: 45%;
-      left: 10%;
-    }
-    .box1{
-      height: 110vh;
-      background-color: #000000;
-    }
-    .div_text1_1{
-      display: flex;
-      flex-direction: column;
-      align-content: center;
-      justify-content: center;
-      top: 10%;
-      left: 10%;
-      position: absolute;
-    }
-    .text1_1 {
-      font-size: 2.5rem;
-    }
-    #hero .hero-container {
-      bottom: 55%;
-     }
-     .contentEmail{
-      font-size: 1.5rem!important;
-   }
-   ::placeholder {
-      font-size: 1rem;
-     }
-     #email{
-      width: 100%!important;
-   }
-   #img3_1{
+ @media (max-width: 640px) {
+	.img1_1{
+	   position: absolute;
+	   width: 80%;
+	   top: 45%;
+	   left: 10%;
+	 }
+	 .box1{
+	   height: 110vh;
+	   background-color: #000000;
+	 }
+	 .div_text1_1{
+	   display: flex;
+	   flex-direction: column;
+	   align-content: center;
+	   justify-content: center;
+	   top: 10%;
+	   left: 10%;
+	   position: absolute;
+	 }
+	 .text1_1 {
+	   font-size: 2.5rem;
+	 }
+	 #hero .hero-container {
+	   bottom: 55%;
+	  }
+	  .contentEmail{
+	   font-size: 1.7rem!important;
+	}
+	::placeholder {
+	   font-size: 1rem;
+	  }
+	  #email{
+	   width: 80%!important;
+	}
+	#img3_1{
 	width: 150%;
 	}
 	.about1 h2{
-      font-size: 30px!important;
-   }
- }
-@media (max-width: 415px) {
-	#img3_1{
-		width: 150%;
-    }
-   .img1_1{
-      position: absolute;
-      width: 85%;
-      top: 48%;
-      left: 10%;
-    }
-    .text1_1 {
-      font-size: 2rem;
-    }
-    .div_text1_1{
-      top: 15%;
-      left: 10%;
-
-    }
-    .contentEmail{
-      font-size: 1rem!important;
-   }
-   .subcontentEmail{
-		font-size: 0.7rem!important;
-   }
-   ::placeholder {
-      font-size: 0.8rem;
-     }
-	.submit{
-      font-size: 0.8rem;
-   }
-   #email{
-      width: 80%!important;
-   }
-   .about1 h2{
-	font-size: 30px!important;
- }
+	   font-size: 30px!important;
+	}
   }
+ @media (max-width: 415px) {
+	#img3_1{
+	   width: 150%;
+	 }
+	.img1_1{
+	   position: absolute;
+	   width: 85%;
+	   top: 48%;
+	   left: 10%;
+	 }
+	 .text1_1 {
+	   font-size: 2rem;
+	 }
+	 .div_text1_1{
+	   top: 15%;
+	   left: 10%;
+	 }
+	.form-wrapper{
+	   padding: 5%;
+	}
+	 .contentEmail{
+	   font-size: 1.7rem!important;
+	}
+	.subcontentEmail{
+	   font-size: 0.85rem!important;
+	}
+	::placeholder {
+	   font-size: 0.8rem;
+	  }
+	.submit{
+	   font-size: 1rem;
+	}
+	.about1 h2{
+	font-size: 24px!important;
+	 }
+	.about1 p{
+	font-size: 16px!important;
+	}
+}
   .cd-popup {
 	position: fixed;
 	left: 0;
