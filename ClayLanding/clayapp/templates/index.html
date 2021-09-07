@@ -16,10 +16,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500&display=swap" rel="stylesheet">
-
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <!-- Favicons -->
-    <!-- <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+    <link href="{% static 'images/logo.png' %}" rel="icon">
+    <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
     <!-- Vendor CSS Files -->
     <link href="{% static 'aos/aos.css' %}" rel="stylesheet">
@@ -33,180 +33,185 @@
 </head>
 
 <body>
-
-    <body>
-        <form action="" method='GET' class="form1">
-            {% csrf_token %}
-            <div class="box1">
-                <img class="img1_1" src="{% static 'images/img_onboarding.png' %}">
-                <div class="div_text1_1">
-                    <span class="text1_1">
-                        한 곳에
-                        모으고,<br>
-                        한 눈에
-                        파악하기.</span>
-                </div>
-                <section id="hero">
-                    <div class="hero-container">
-                        <a href="#email111" class="btn-get-started scrollto">Let's CLAY!</a>
-                    </div>
-                </section>
+    <form action="" method='GET' class="form1">
+        {% csrf_token %}
+        <div class="box1">
+            <img class="img1_1" src="{% static 'images/img_onboarding.png' %}">
+            <div class="div_text1_1">
+                <span class="text1_1">
+                    한 곳에
+                    모으고,<br>
+                    한 눈에
+                    파악하기.</span>
             </div>
-            <!--  -->
-            <div class="d0"></div>
-            <section id="about1" class="about1">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6  order-1 order-lg-2" data-aos="fade-left">
-                            <div class="section-title" data-aos="fade-up">
-                                <h2>카카오톡 '나에게 보내기'로 쌓은<br> 수많은 <span class="s1">링크</span>들 🔗<br>
-                                    다시 찾아보셨나요?</h2>
-                                <!-- 멘트수정필요 -->
+            <section id="hero">
+                <div class="hero-container">
+                    <a href="#email111" class="btn-get-started scrollto">Let's CLAY!</a>
+                </div>
+            </section>
+        </div>
+        <!--  -->
+        <div class="d0"></div>
+        <section id="about1" class="about1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6  order-1 order-lg-2" data-aos="fade-left">
+                        <div class="section-title" data-aos="fade-up">
+                            <h2>카카오톡 '나에게 보내기'로 쌓은<br> 수많은 <span class="s1">링크</span>들 🔗<br>
+                                다시 찾아보셨나요?</h2>
+                            <!-- 멘트수정필요 -->
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-right">
+                        <img class="img-fluid" alt="" src="{% static 'images/img_screen.png' %}">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 아림수정 -->
+        <div class="d0"></div>
+
+        <section id="about1" class="about1">
+            <!-- <div class="box00"> -->
+            <div class="container">
+                <div class="row">
+                    <div class="section-title" data-aos="fade-up">
+                        <h2>만약, 하루에 접하는 수많은 콘텐츠들을 <br><span class="one">한 곳</span>에 모으고, 한
+                            눈에 <span class="one">파악</span>할 수 있다면?</h2>
+
+
+                        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="0">
+                            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                                <!-- <div class="portfolio-wrap"> -->
+                                <img class="img-fluid" alt="" src="{% static 'images/platform.png' %}" id="img3_1">
+                                <!-- </div> -->
                             </div>
                         </div>
-                        <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-right">
-                            <img class="img-fluid" alt="" src="{% static 'images/img_screen.png' %}">
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+            <!-- </section> -->
+
+            <div class="d3"></div>
+
+            <!-- 아림수정end -->
+
+            <!-- ======= About Us Section ======= -->
+            <section id="about" class="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6" data-aos="fade-left">
+                            <div id="about_content" class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
+                                <h3>💡 간편하게 모든 콘텐츠를 <span class="c">C</span><span class="l">L</span><span
+                                        class="a">A</span><span class="y">Y</span>에 모아 보세요!</h3>
+                                <br>
+                                <p class="fst-italic">
+                                    계속 담게되는 쇼핑 정보, 다시 봐야 하는 각종 정보들,<br>
+                                    계속 추가되는 맛집 리스트, 다시 보고 싶은 영상들,<br>
+                                </p>
+                                <p class="txt_bold">당신이 스마트폰에서 보는<br>모든 콘텐츠를 클레이에서 모을 수 있어요.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6" data-aos="fade-right">
+                            <img src="{% static 'images/share.png' %}" class="img22" alt="">
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- 아림수정 -->
-            <div class="d0"></div>
+            <!-- End About Us Section -->
 
-            <section id="about1" class="about1">
+            <!-- ======= Services Section ======= -->
+            <section id="services" class="services">
                 <div class="container">
                     <div class="row">
-                        <div class="section-title" data-aos="fade-up">
-                            <h2>만약, 하루에 접하는 수많은 콘텐츠들을 <br><span class="one">한 곳</span>에 모으고, 한
-                                눈에 <span class="one">파악</span>할 수 있다면?</h2>
-                            <div></div>
-
-                            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="0">
-                                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                                    <!-- <div class="portfolio-wrap"> -->
-                                    <img class="img-fluid" alt="" src="{% static 'images/platform.png' %}" id="img3_1">
-                                    <!-- </div> -->
-                                </div>
+                        <div class="col-lg-6  order-1 order-lg-2" data-aos="fade-right">
+                            <div id="service_content" class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
+                                <h3>⚡ 저장한 링크들, 당신이 필요한 순간에 꺼내보세요!</h3>
+                                <br>
+                                <p class="fst-italic">
+                                    언제 어디에서 본지 몰라서,<br>
+                                    어떤 내용인지 정확히 기억나지 않아서,<br>
+                                    다시 찾아보지 못했던 콘텐츠들!<br>
+                                </p>
+                                <p class="txt_bold">자동 분류와 키워드 검색으로<br>
+                                    CLAY에서 더 빨리 더 쉽게 찾아볼 수 있어요.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-left">
+                            <div class="image">
+                                <img src="{% static 'images/array.png' %}" class="img23" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <div class="d1"></div>
-
-                <!-- 아림수정end -->
-
-                <!-- ======= About Us Section ======= -->
-                <section id="about" class="about">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-6" data-aos="fade-left">
-                                <div id="about_content" class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
-                                    <h3>💡 간편하게 모든 콘텐츠를 <span class="c">C</span><span class="l">L</span><span
-                                            class="a">A</span><span class="y">Y</span>에 모아 보세요!</h3>
-                                    <br>
-                                    <p class="fst-italic">
-                                        계속 담게되는 쇼핑 정보, 다시 봐야 하는 각종 정보들,<br>
-                                        계속 추가되는 맛집 리스트, 다시 보고 싶은 영상들,<br>
-                                    </p>
-                                    <p class="txt_bold">당신이 스마트폰에서 보는<br>모든 콘텐츠를 클레이에서 모을 수 있어요.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6" data-aos="fade-right">
-                                <img src="{% static 'images/classify1.png.png' %}" class="img-fluid" alt="">
-                            </div>
+            <div class="d1"></div>
+            <a name="email111"></a>
+            <div class="form-wrapper">
+                <div>
+                    <label for="email" class="labelEmail">
+                        <span class="contentEmail">누구보다 먼저, <br><span style="color:#ffa600;">똑똑한 콘텐츠 라이프</span>를
+                            경험하세요!</span>
+                        <br><span class="subcontentEmail">이메일을 남기시면 CLAY의 출시알림을 보내드려요</span>
+                    </label>
+                </div>
+                <div class="email_field">
+                    <input type="text" id='email' name='user' autocomplete="off" placeholder="  email 입력" required>
+                </div>
+                <div>
+                    <button type="submit" class="submit"><span class="c">C</span><span class="l">L</span><span
+                            class="a">A</span><span class="y">Y</span> 알림받기!</button>
+                    <!-- <input type="submit" class="submit" value="CLAY 알림받기!"> -->
+                    <div class="cd-popup" role="alert">
+                        <div class="cd-popup-container">
+                            <p>제출이 완료되었습니다!</p>
+                            <a href="#0" class="cd-popup-close img-replace"></a>
                         </div>
-                    </div>
-                </section>
-                <!-- End About Us Section -->
-
-                <!-- ======= Services Section ======= -->
-                <section id="services" class="services">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-6  order-1 order-lg-2" data-aos="fade-right">
-                                <div id="service_content" class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
-                                    <h3>⚡ 수집한 콘텐츠를 빠르게 다시 찾아보세요!</h3>
-                                    <br>
-                                    <p class="fst-italic">
-                                        언제 어디에서 본지 몰라서,<br>
-                                        어떤 내용인지 정확히 기억나지 않아서,<br>
-                                        다시 찾아보지 못했던 콘텐츠들!<br>
-                                    </p>
-                                    <p class="txt_bold">자동 분류와 키워드 검색으로<br>
-                                        CLAY에서 더 빨리 더 쉽게 찾아볼 수 있어요.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-left">
-                                <div class="image">
-                                    <img src="{% static 'images/moa123.png' %}" class="img-fluid" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <div class="d1"></div>
-                <a name="email111"></a>
-                <div class="form-wrapper">
-                    <div>
-                        <label for="email" class="labelEmail">
-                            <span class="contentEmail">누구보다 먼저, <br><span style ="color:#ffa600;">똑똑한 콘텐츠 라이프</span>를 경험하세요!</span>
-                            <br><span class="subcontentEmail">이메일을 남기시면 CLAY의 출시알림을 보내드려요</span>
-                        </label>
-                    </div>
-                    <div class="email_field">
-                        <input type="text" id='email' name='user' autocomplete="off" placeholder="  email 입력" required>
-                    </div>
-                    <div>
-                        <!-- <button type="submit" class="submit"><span class="c">C</span><span class="l">L</span><span
-                            class="a">A</span><span class="y">Y</span> 알림받기!</button> -->
-                            <input type="submit" class="submit" value="CLAY 알림받기!">
                     </div>
                 </div>
-                <div class="d1"></div>
-
-                <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-                        class="bi bi-arrow-up-short"></i></a>
-        </form>
-        <div class="foot">
-            &copy; <strong><span>WEVIVOR</span></strong>. All Rights Reserved
-        </div>
-        <div class="black_bg"></div>
-        <div class="modal_wrap">
-            <div class="modal_close"><a href="#">close</a></div>
-            <div>
-                제출이 완료되었습니다!
             </div>
-        <div>
+            <div class="d1"></div>
 
-        <!-- Vendor JS Files -->
-        <script src="{% static 'aos/aos.js' %}"></script>
-        <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
-        <script src="{% static 'glightbox/js/glightbox.min.js' %}"></script>
-        <script src="{% static 'isotope-layout/isotope.pkgd.min.js' %}"></script>
-        <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
-        <script src="{% static 'swiper/swiper-bundle.min.js' %}"></script>
+            <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+                    class="bi bi-arrow-up-short"></i></a>
+    </form>
+    <div class="foot">
+        &copy; <strong><span>WEVIVOR</span></strong>. All Rights Reserved
+    </div>
+    <!-- <script>jQuery(document).ready(function ($) {
+            //open popup
+            $('.submit').on('click', function (event) {
+                event.preventDefault();
+                $('.cd-popup').addClass('is-visible');
+            });
 
-        <!-- Template Main JS File -->
-        <script src="{% static 'main.js' %}"></script>
-        <script>
-            window.onload = function() {
+            //close popup
+            $('.cd-popup').on('click', function (event) {
+                if ($(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup')) {
+                    event.preventDefault();
+                    $(this).removeClass('is-visible');
+                }
+            });
+            //close popup when clicking the esc keyboard button
+            $(document).keyup(function (event) {
+                if (event.which == '27') {
+                    $('.cd-popup').removeClass('is-visible');
+                }
+            });
+        });
+    </script> -->
 
-            function onClick() {
-                document.querySelector('.modal_wrap').style.display ='block';
-                document.querySelector('.black_bg').style.display ='block';
-            }
-            function offClick() {
-                document.querySelector('.modal_wrap').style.display ='none';
-                document.querySelector('.black_bg').style.display ='none';
-            }
+    <!-- Vendor JS Files -->
+    <script src="{% static 'aos/aos.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'glightbox/js/glightbox.min.js' %}"></script>
+    <script src="{% static 'isotope-layout/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'swiper/swiper-bundle.min.js' %}"></script>
 
-            document.getElementById('.submit').addEventListener('click', onClick);
-            document.querySelector('.modal_close').addEventListener('click', offClick);
-
-        };
-        </script>
-    </body>
+    <!-- Template Main JS File -->
+    <script src="{% static 'main.js' %}"></script>
+</body>
 
 </html>
