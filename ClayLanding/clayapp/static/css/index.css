@@ -445,7 +445,6 @@ video::-webkit-media-controls {
 
  }
 
-
   /* about1 > row portfolio-container{
 	  position: absolute;
 	  left:10%;
@@ -630,7 +629,13 @@ video::-webkit-media-controls {
    .about1 h2{
       font-size: 24px!important;
    }
-}
+    #about_content{
+	   margin-bottom: 15%!important;
+    }
+	#service_content{
+	   margin-bottom: 15%!important;
+	}
+ }
 
 @media (max-width: 640px) {
    .img1_1{
@@ -667,6 +672,9 @@ video::-webkit-media-controls {
      #email{
       width: 100%!important;
    }
+   /* .about .content{
+
+   } */
  }
 @media (max-width: 415px) {
    .img1_1{
