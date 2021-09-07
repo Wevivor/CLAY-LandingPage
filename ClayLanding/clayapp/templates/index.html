@@ -100,7 +100,7 @@
                 <section id="services" class="services">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-6  order-1 order-lg-2" data-aos="fade-left">
+                            <div class="col-lg-6  order-1 order-lg-2" data-aos="fade-right">
                                 <div id="service_content" class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
                                     <h3>⚡ 수집한 콘텐츠를 빠르게 다시 찾아보세요!</h3>
                                     <br>
@@ -113,7 +113,7 @@
                                         CLAY에서 더 빨리 더 쉽게 찾아볼 수 있어요.</p>
                                 </div>
                             </div>
-                            <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-right">
+                            <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-left">
                                 <div class="image">
                                     <img src="{% static 'images/moa123.png' %}" class="img-fluid" alt="">
                                 </div>
@@ -127,14 +127,17 @@
                 <div class="form-wrapper">
                     <div>
                         <label for="email" class="labelEmail">
-                            <span class="contentEmail">누구보다 먼저, &nbsp;CLAY를 경험하세요!</span>
+                            <span class="contentEmail">누구보다 먼저, <br><span style ="color:#ffa600;">똑똑한 콘텐츠 라이프</span>를 경험하세요!</span>
+                            <br><span class="subcontentEmail">이메일을 남기시면 CLAY의 출시알림을 보내드려요</span>
                         </label>
                     </div>
                     <div class="email_field">
                         <input type="text" id='email' name='user' autocomplete="off" placeholder="  email 입력" required>
                     </div>
                     <div>
-                        <input type="submit" class="submit" value="제출하기">
+                        <!-- <button type="submit" class="submit"><span class="c">C</span><span class="l">L</span><span
+                            class="a">A</span><span class="y">Y</span> 알림받기!</button> -->
+                            <input type="submit" class="submit" value="CLAY 알림받기!">
                     </div>
                 </div>
                 <div class="d1"></div>
@@ -145,6 +148,13 @@
         <div class="foot">
             &copy; <strong><span>WEVIVOR</span></strong>. All Rights Reserved
         </div>
+        <div class="black_bg"></div>
+        <div class="modal_wrap">
+            <div class="modal_close"><a href="#">close</a></div>
+            <div>
+                제출이 완료되었습니다!
+            </div>
+        <div>
 
         <!-- Vendor JS Files -->
         <script src="{% static 'aos/aos.js' %}"></script>
@@ -156,7 +166,23 @@
 
         <!-- Template Main JS File -->
         <script src="{% static 'main.js' %}"></script>
+        <script>
+            window.onload = function() {
 
+            function onClick() {
+                document.querySelector('.modal_wrap').style.display ='block';
+                document.querySelector('.black_bg').style.display ='block';
+            }
+            function offClick() {
+                document.querySelector('.modal_wrap').style.display ='none';
+                document.querySelector('.black_bg').style.display ='none';
+            }
+
+            document.getElementById('.submit').addEventListener('click', onClick);
+            document.querySelector('.modal_close').addEventListener('click', offClick);
+
+        };
+        </script>
     </body>
 
 </html>
