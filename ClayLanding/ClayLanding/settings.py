@@ -48,7 +48,7 @@ if os.path.isfile(os.path.join(BASE_DIR,'secrets.json'))==True:
 
     SECRET_KEY = get_secret("SECRET_KEY")
 else:
-    SECRET_KEY=os.environ.get('SECRET_KEY','django-insecure-rbry5^kwn+961w1ce&^79s65+#i2)(rwhk5q&gpo9e0m@5%*-x')
+    SECRET_KEY=os.environ.get('SECRET_KEY','rbry5^kwn+961w1ce&^79s65+#i2)(rwhk5q&gpo9e0m@5%*-x')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
