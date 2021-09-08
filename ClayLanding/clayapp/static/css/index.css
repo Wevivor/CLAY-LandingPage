@@ -845,7 +845,6 @@ video::-webkit-media-controls {
 	   font-size: 0.8rem;
 	  }
 	.submit{
-<<<<<<< HEAD
       font-size: 0.8rem;
    }
    #email{
@@ -853,19 +852,12 @@ video::-webkit-media-controls {
    }
    .about1 h2{
 	font-size: 25px!important;
- }
-  }
-=======
-	   font-size: 1rem;
 	}
-	.about1 h2{
-	font-size: 24px!important;
-	 }
 	.about1 p{
 	font-size: 16px!important;
 	}
 }
->>>>>>> 45ecde5d7f9ded1e5e3641a8459a9f81f2a203cb
+
   .cd-popup {
 	position: fixed;
 	left: 0;
